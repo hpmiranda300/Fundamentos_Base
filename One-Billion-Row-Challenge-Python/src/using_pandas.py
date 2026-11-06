@@ -41,7 +41,8 @@ import time
 # --- Constantes de Configuração ---
 
 # Define o caminho para o arquivo de dados.
-FILENAME = "One-Billion-Row-Challenge-Python/data/measurements.txt"
+#FILENAME = "One-Billion-Row-Challenge-Python/data/measurements.txt"
+FILENAME = "data/measurements.txt"
 
 # Define o tamanho de cada "pedaço" do arquivo a ser lido na memória.
 # Ajuste este valor dependendo da memória RAM disponível.

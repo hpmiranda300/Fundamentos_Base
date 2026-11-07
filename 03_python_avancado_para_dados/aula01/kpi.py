@@ -22,5 +22,5 @@ print("Valor do bônus: R$", valor_bonus)
 print("Olá, ", nome, "!")
 print("Seu salário é de R$", salario)
 print("Seu bônus é de R$", valor_bonus)
-
+print(f"O usuario {nome} possui o bonus de {valor_bonus}")
 # Bônus: Quantos bugs e riscos você consegue identificar nesse programa?

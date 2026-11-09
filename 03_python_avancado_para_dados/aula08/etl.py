@@ -18,15 +18,22 @@ def transformar_dados(df: pd.DataFrame):
     print(df)
     return df
 
-def carregar_dados(df: pd.DataFrame, formatos: list):
+def carregar_dados(df: pd.DataFrame, formatos: list, pasta_saida: str):
+    # Cria a pasta caso ainda não exista
+    pasta = Path(pasta_saida)
+    pasta.mkdir(parents=True, exist_ok=True)
 
     for formato in formatos:
-        if formato == 'csv':
-            df.to_csv("dados.csv", index=False)
-        elif formato == 'parquet':
-            df.to_parquet( "dados.parquet", index=False)
+        if formato == "csv":
+            arquivo = pasta / "dados.csv"
+            df.to_csv(arquivo, index=False)
 
-def pipeline(pasta_entrada: str, formato_saida: str):
+        elif formato == "parquet":
+            arquivo = pasta / "dados.parquet"
+            df.to_parquet(arquivo, index=False)
+
+def pipeline(pasta_entrada: str, formato_saida: list, pasta_saida: str):
     dados = extrair_dados(pasta_entrada)
     dados_transformados = transformar_dados(dados)
-    carregar_dados(dados_transformados, formato_saida)
+    carregar_dados(dados_transformados, formato_saida, pasta_saida)
+    #print(pd.read_parquet('aula08/output/dados.parquet'))

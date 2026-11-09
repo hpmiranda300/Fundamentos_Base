@@ -1,0 +1,153 @@
+2026-11-09T10:41:08.397889-0300 INFO Chamando função 'soma' com args (5, 3) e kwargs {} exemplo_decorator_hudson.py
+2026-11-09T10:41:08.398478-0300 INFO Função 'soma' executada em 0.0000 segundos exemplo_decorator_hudson.py
+2026-11-09T10:41:08.398793-0300 INFO Função 'soma' retornou 8 exemplo_decorator_hudson.py
+2026-11-09T10:50:29.128816-0300 INFO Chamando função 'soma' com args (5, 3) e kwargs {} exemplo_decorator_hudson.py
+2026-11-09T10:50:29.129376-0300 INFO Função 'soma' executada em 0.0000 segundos exemplo_decorator_hudson.py
+2026-11-09T10:50:29.129659-0300 INFO Função 'soma' retornou 8 exemplo_decorator_hudson.py
+2026-11-09T10:54:46.952411-0300 INFO Chamando função 'soma' com args (5, 3) e kwargs {} exemplo_decorator_hudson.py
+2026-11-09T10:55:36.656099-0300 INFO Função 'soma' executada em 9.5542 segundos exemplo_decorator_hudson.py
+2026-11-09T10:55:47.928399-0300 INFO Função 'soma' retornou 8 exemplo_decorator_hudson.py
+2026-11-09T11:18:01.831163-0300 INFO Chamando função 'pipeline_calcular_kpi_de_vendas_consolidado' com args ('aula09/data', ['csv', 'parquet']) e kwargs {} decorator_hudson.py
+2026-11-09T11:18:29.768366-0300 INFO Chamando função 'extrair_dados_e_consolidar' com args ('aula09/data',) e kwargs {} decorator_hudson.py
+2026-11-09T11:19:47.372255-0300 INFO Função 'extrair_dados_e_consolidar' executada em 67.5025 segundos decorator_hudson.py
+2026-11-09T11:19:54.502407-0300 INFO Função 'extrair_dados_e_consolidar' retornou             Produto    Categoria  Quantidade  Venda        Data
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17 decorator_hudson.py
+2026-11-09T11:20:11.512357-0300 INFO Chamando função 'calcular_kpi_de_total_de_vendas' com args (            Produto    Categoria  Quantidade  Venda        Data
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17,) e kwargs {} decorator_hudson.py
+2026-11-09T11:20:52.851634-0300 INFO Função 'calcular_kpi_de_total_de_vendas' executada em 13.8181 segundos decorator_hudson.py
+2026-11-09T11:21:03.602328-0300 INFO Função 'calcular_kpi_de_total_de_vendas' retornou             Produto    Categoria  Quantidade  Venda        Data  Total
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15   4500
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15    300
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15    500
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16    300
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17   3000
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17    420
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17    200 decorator_hudson.py
+2026-11-09T11:22:11.282063-0300 INFO Chamando função 'carregar_dados' com args (            Produto    Categoria  Quantidade  Venda        Data  Total
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15   4500
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15    300
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15    500
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16    300
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17   3000
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17    420
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17    200, ['csv', 'parquet']) e kwargs {} decorator_hudson.py
+2026-11-09T11:23:00.393554-0300 INFO Função 'carregar_dados' executada em 35.5198 segundos decorator_hudson.py
+2026-11-09T11:23:16.801961-0300 INFO Função 'carregar_dados' retornou None decorator_hudson.py
+2026-11-09T11:23:25.662750-0300 INFO Função 'pipeline_calcular_kpi_de_vendas_consolidado' executada em 311.8833 segundos decorator_hudson.py
+2026-11-09T11:23:27.756533-0300 INFO Função 'pipeline_calcular_kpi_de_vendas_consolidado' retornou None decorator_hudson.py
+2026-11-09T11:35:54.366777-0300 INFO Chamando função 'pipeline_calcular_kpi_de_vendas_consolidado' com args (WindowsPath('c:/Projetos_Git/Fundamentos_Base/03_python_avancado_para_dados/aula09/data'), ['csv', 'parquet'], WindowsPath('c:/Projetos_Git/Fundamentos_Base/03_python_avancado_para_dados/aula09/output')) e kwargs {} decorator_hudson.py
+2026-11-09T11:35:54.367198-0300 INFO Chamando função 'extrair_dados_e_consolidar' com args (WindowsPath('c:/Projetos_Git/Fundamentos_Base/03_python_avancado_para_dados/aula09/data'),) e kwargs {} decorator_hudson.py
+2026-11-09T11:35:54.394039-0300 INFO Função 'extrair_dados_e_consolidar' executada em 0.0266 segundos decorator_hudson.py
+2026-11-09T11:35:54.398901-0300 INFO Função 'extrair_dados_e_consolidar' retornou             Produto    Categoria  Quantidade  Venda        Data
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17 decorator_hudson.py
+2026-11-09T11:35:54.402042-0300 INFO Chamando função 'calcular_kpi_de_total_de_vendas' com args (            Produto    Categoria  Quantidade  Venda        Data
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17,) e kwargs {} decorator_hudson.py
+2026-11-09T11:35:54.403898-0300 INFO Função 'calcular_kpi_de_total_de_vendas' executada em 0.0013 segundos decorator_hudson.py
+2026-11-09T11:35:54.407607-0300 INFO Função 'calcular_kpi_de_total_de_vendas' retornou             Produto    Categoria  Quantidade  Venda        Data  Total
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15   4500
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15    300
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15    500
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16    300
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17   3000
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17    420
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17    200 decorator_hudson.py
+2026-11-09T11:35:54.410650-0300 INFO Chamando função 'carregar_dados' com args (            Produto    Categoria  Quantidade  Venda        Data  Total
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15   4500
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15    300
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15    500
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16    300
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17   3000
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17    420
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17    200, ['csv', 'parquet'], WindowsPath('c:/Projetos_Git/Fundamentos_Base/03_python_avancado_para_dados/aula09/output')) e kwargs {} decorator_hudson.py
+2026-11-09T11:35:54.463973-0300 INFO Função 'carregar_dados' executada em 0.0524 segundos decorator_hudson.py
+2026-11-09T11:35:54.464420-0300 INFO Função 'carregar_dados' retornou None decorator_hudson.py
+2026-11-09T11:35:54.465071-0300 INFO Função 'pipeline_calcular_kpi_de_vendas_consolidado' executada em 0.0979 segundos decorator_hudson.py
+2026-11-09T11:35:54.465405-0300 INFO Função 'pipeline_calcular_kpi_de_vendas_consolidado' retornou None decorator_hudson.py
+2026-11-09T11:36:51.707193-0300 INFO Chamando função 'pipeline_calcular_kpi_de_vendas_consolidado' com args (WindowsPath('c:/Projetos_Git/Fundamentos_Base/03_python_avancado_para_dados/aula09/data'), ['csv', 'parquet'], WindowsPath('c:/Projetos_Git/Fundamentos_Base/03_python_avancado_para_dados/aula09/output')) e kwargs {} decorator_hudson.py
+2026-11-09T11:36:51.707635-0300 INFO Chamando função 'extrair_dados_e_consolidar' com args (WindowsPath('c:/Projetos_Git/Fundamentos_Base/03_python_avancado_para_dados/aula09/data'),) e kwargs {} decorator_hudson.py
+2026-11-09T11:36:51.735248-0300 INFO Função 'extrair_dados_e_consolidar' executada em 0.0273 segundos decorator_hudson.py
+2026-11-09T11:36:51.739782-0300 INFO Função 'extrair_dados_e_consolidar' retornou             Produto    Categoria  Quantidade  Venda        Data
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17 decorator_hudson.py
+2026-11-09T11:36:51.742438-0300 INFO Chamando função 'calcular_kpi_de_total_de_vendas' com args (            Produto    Categoria  Quantidade  Venda        Data
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17,) e kwargs {} decorator_hudson.py
+2026-11-09T11:36:51.744250-0300 INFO Função 'calcular_kpi_de_total_de_vendas' executada em 0.0012 segundos decorator_hudson.py
+2026-11-09T11:36:51.747136-0300 INFO Função 'calcular_kpi_de_total_de_vendas' retornou             Produto    Categoria  Quantidade  Venda        Data  Total
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15   4500
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15    300
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15    500
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16    300
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17   3000
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17    420
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17    200 decorator_hudson.py
+2026-11-09T11:36:51.749827-0300 INFO Chamando função 'carregar_dados' com args (            Produto    Categoria  Quantidade  Venda        Data  Total
+0    Notebook Gamer  Eletrônicos           3   1500  2023-01-15   4500
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15    300
+2  Teclado Mecânico  Eletrônicos           5    100  2023-01-15    500
+3    Notebook Gamer  Eletrônicos           7   1500  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos           3    100  2023-01-16    300
+6    Notebook Gamer  Eletrônicos           2   1500  2023-01-17   3000
+7     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17    420
+8  Teclado Mecânico  Eletrônicos           2    100  2023-01-17    200, ['csv', 'parquet'], WindowsPath('c:/Projetos_Git/Fundamentos_Base/03_python_avancado_para_dados/aula09/output')) e kwargs {} decorator_hudson.py
+2026-11-09T11:36:51.801709-0300 INFO Função 'carregar_dados' executada em 0.0513 segundos decorator_hudson.py
+2026-11-09T11:36:51.802206-0300 INFO Função 'carregar_dados' retornou None decorator_hudson.py
+2026-11-09T11:36:51.802672-0300 INFO Função 'pipeline_calcular_kpi_de_vendas_consolidado' executada em 0.0950 segundos decorator_hudson.py
+2026-11-09T11:36:51.803001-0300 INFO Função 'pipeline_calcular_kpi_de_vendas_consolidado' retornou None decorator_hudson.py

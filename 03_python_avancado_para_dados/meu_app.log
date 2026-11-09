@@ -1,0 +1,44 @@
+2026-11-08 21:57:52.122 | INFO     | __main__:<module>:22 - Essa mensagem será salva no arquivo
+2026-11-08 21:57:52.122 | ERROR    | __main__:<module>:36 - Uma exceção foi capturada
+Traceback (most recent call last):
+
+> File "c:\Projetos_Git\Fundamentos_Base\03_python_avancado_para_dados\aula08\teste_loguru.py", line 34, in <module>
+    minha_funcao()
+    └ <function minha_funcao at 0x0000019BF1AD7690>
+
+  File "c:\Projetos_Git\Fundamentos_Base\03_python_avancado_para_dados\aula08\teste_loguru.py", line 31, in minha_funcao
+    raise ValueError("Um erro aconteceu!")
+
+ValueError: Um erro aconteceu!
+2026-11-08 22:02:56.923 | INFO     | __main__:<module>:22 - Essa mensagem será salva no arquivo
+2026-11-08 22:02:56.923 | ERROR    | __main__:<module>:36 - Uma exceção foi capturada
+Traceback (most recent call last):
+
+> File "c:\Projetos_Git\Fundamentos_Base\03_python_avancado_para_dados\aula08\teste_loguru.py", line 34, in <module>
+    minha_funcao()
+    └ <function minha_funcao at 0x00000189D72C7740>
+
+  File "c:\Projetos_Git\Fundamentos_Base\03_python_avancado_para_dados\aula08\teste_loguru.py", line 31, in minha_funcao
+    raise ValueError("Um erro aconteceu!")
+
+ValueError: Um erro aconteceu!
+2026-11-08 22:02:56.926 | INFO     | __main__:wrapper:43 - Chamando 'soma' com (5, 3) e {}
+2026-11-08 22:02:56.926 | INFO     | __main__:wrapper:46 - 'soma' retornou 8
+2026-11-08 22:02:56.927 | INFO     | __main__:wrapper:43 - Chamando 'falha' com () e {}
+2026-11-08 22:02:56.927 | ERROR    | __main__:wrapper:49 - 'falha' lançou uma exceção: Um erro intencional
+Traceback (most recent call last):
+
+  File "c:\Projetos_Git\Fundamentos_Base\03_python_avancado_para_dados\aula08\teste_loguru.py", line 67, in <module>
+    falha()  # Isso irá logar a chamada e a exceção
+    └ <function log_decorator.<locals>.wrapper at 0x00000189D983D900>
+
+> File "c:\Projetos_Git\Fundamentos_Base\03_python_avancado_para_dados\aula08\teste_loguru.py", line 45, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ()
+             └ <function falha at 0x00000189D983D850>
+
+  File "c:\Projetos_Git\Fundamentos_Base\03_python_avancado_para_dados\aula08\teste_loguru.py", line 62, in falha
+    raise ValueError("Um erro intencional")
+
+ValueError: Um erro intencional

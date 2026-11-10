@@ -537,6 +537,21 @@ files = [
 tzdata = "*"
 
 [[package]]
+name = "schedule"
+version = "1.2.2"
+description = "Job scheduling for humans."
+optional = false
+python-versions = ">=3.7"
+groups = ["main"]
+files = [
+    {file = "schedule-1.2.2-py3-none-any.whl", hash = "sha256:5bef4a2a0183abf44046ae0d164cadcac21b1db011bdd8102e4a0c1e91e06a7d"},
+    {file = "schedule-1.2.2.tar.gz", hash = "sha256:15fe9c75fe5fd9b9627f3f19cc0ef1420508f9f9a46f45cd0769ef75ede5f0b7"},
+]
+
+[package.extras]
+timezone = ["pytz"]
+
+[[package]]
 name = "tenacity"
 version = "9.2.1"
 description = "Retry code until it succeeds"
@@ -641,4 +656,4 @@ dev = ["black (>=19.3b0) ; python_version >= \"3.6\"", "pytest (>=4.6.2)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.14,<4.0"
-content-hash = "211e8b345dace1dfb28192af49150d3ed2c3a776e186efef8718e44ee10b3d42"
+content-hash = "e8d51bad6afbaade560d66cfc5ddd94c6680197d0b450bb404e659c0af43b0dc"

@@ -1,5 +1,5 @@
-## Em Python, a sobrecarga de método não é diretamente suportada como em algumas outras linguagens de programação, 
-## mas você pode simular sobrecarga usando parâmetros padrão ou argumentos variáveis.
+## Em Python, a sobrecarga de método não é diretamente suportada como em algumas outras linguagens de 
+# programação, mas você pode simular sobrecarga usando parâmetros padrão ou argumentos variáveis.
 
 
 class Calculadora:

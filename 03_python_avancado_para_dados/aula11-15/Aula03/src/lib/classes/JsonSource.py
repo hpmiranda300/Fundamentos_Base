@@ -5,7 +5,7 @@ from lib.classes.FilesSources import FilesSources
 class JsonSource(FilesSources):
     def create_path(self):
         current_directory = os.getcwd()
-        self.folder_path = os.path.join(current_directory, 'json_files')
+        self.folder_path = os.path.join(current_directory, 'aula11-15','aula03','data', 'json_files')
         if not os.path.exists(self.folder_path):
             os.makedirs(self.folder_path)
 
@@ -23,11 +23,11 @@ class JsonSource(FilesSources):
 
     def read_json_file(self, file_path):
         try:
-            with open(file_path, 'r') as f:
+            with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
             return data
         except Exception as e:
-            print("Erro ao acessar o JSON")
+            print(f"Erro ao acessar o JSON ({file_path}): {e}")
             return None
     
     def get_data(self):
@@ -38,6 +38,9 @@ class JsonSource(FilesSources):
                 path = os.path.join(self.folder_path, file_path)
                 json_data = self.read_json_file(path)
                 if json_data is not None:
-                    data.append(json_data)
+                    if isinstance(json_data, list):
+                        data.extend(json_data)
+                    else:
+                        data.append(json_data)
         print(data)
         return data

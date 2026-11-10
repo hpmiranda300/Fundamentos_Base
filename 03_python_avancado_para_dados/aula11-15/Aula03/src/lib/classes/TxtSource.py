@@ -6,7 +6,7 @@ from lib.classes.FilesSources import FilesSources
 class TxtSource(FilesSources):
     def create_path(self):
         current_directory = os.getcwd()
-        self.folder_path = os.path.join(current_directory, 'data', 'txt_files')
+        self.folder_path = os.path.join(current_directory, 'aula11-15','aula03','data', 'txt_files')
         if not os.path.exists(self.folder_path):
             os.makedirs(self.folder_path)
 

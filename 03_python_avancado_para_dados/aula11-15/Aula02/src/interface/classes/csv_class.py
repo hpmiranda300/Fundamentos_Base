@@ -26,6 +26,8 @@ class CsvProcessor:
         if len(colunas) == 1:
             return df_filtrado
         else:
+            #caso tenha mais de uma coluna e um atributo, chama a função novamente. 
+            # Exemplo de recursividade.
             return self.filtrar_por(colunas[1:], atributos[1:])
 
     

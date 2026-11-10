@@ -6,7 +6,7 @@ from lib.classes.FilesSources import FilesSources
 class CsvSource(FilesSources):
     def create_path(self):
         current_directory = os.getcwd()
-        self.folder_path = os.path.join(current_directory, 'data', 'csv_files')
+        self.folder_path = os.path.join(current_directory, 'aula11-15','aula03', 'data', 'csv_files')
         if not os.path.exists(self.folder_path):
             os.makedirs(self.folder_path)
 

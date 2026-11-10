@@ -1,7 +1,10 @@
 from interface.classes.csv_class import CsvProcessor
+from pathlib import Path
 # import pandas as pd
 
-arquivo_csv = './exemplo.csv'
+pasta_raiz = Path(__file__).parent
+arquivo_csv = pasta_raiz / 'exemplos.csv' # substitua 'exemplo.csv' pelo caminho do seu arquivo CSV
+
 filtro = 'estado'
 limite = 'SP'
 

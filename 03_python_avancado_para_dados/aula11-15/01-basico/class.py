@@ -1,4 +1,5 @@
 import pandas as pd
+from pathlib import Path
 
 class ProcessadorCSV:
     def __init__(self, arquivo_csv):
@@ -26,7 +27,8 @@ class ProcessadorCSV:
         return self.df
 
 # Exemplo de uso
-arquivo_csv = './exemplo.csv'  # substitua 'exemplo.csv' pelo caminho do seu arquivo CSV
+pasta_raiz = Path(__file__).parent
+arquivo_csv = pasta_raiz / 'exemplo.csv' # substitua 'exemplo.csv' pelo caminho do seu arquivo CSV
 estado_filtrado = 'SP'  # estado que você quer filtrar
 
 processador = ProcessadorCSV(arquivo_csv)

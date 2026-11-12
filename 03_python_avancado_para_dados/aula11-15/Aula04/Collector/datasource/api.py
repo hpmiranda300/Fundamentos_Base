@@ -29,6 +29,11 @@ class APICollector:
                 
         @retry(requests.exceptions.RequestException, tries=5, delay=1, backoff=2)
         def getData(self, param):
+            """
+            O método pega um JSON "sujo" (com dados a mais ou formatos inesperados), seleciona apenas 
+            as colunas desejadas e valida se o tipo de dado está correto, garantindo a integridade dos dados
+            antes de convertê-los para DataFrame/Parquet.
+            """
             response = None
             if param > 1:
                   response = requests.get(f'http://127.0.0.1:8000/gerar_compras/{param}').json()
@@ -55,12 +60,12 @@ class APICollector:
         def convertToParquet(self, response):
             self._buffer = BytesIO()
             try:
-                with self._buffer as buffer:
-                    response.to_parquet(buffer)
-                    return buffer
+                response.to_parquet(self._buffer)
+                return self._buffer
             except Exception as e:
-                    print(f"Error converting DataFrame to Parquet: {e}")
-                    self._buffer = None
+                print(f"Error converting DataFrame to Parquet: {e}")
+                self._buffer = None
+                return None
 
         def fileName(self):
              data_atual = datetime.datetime.now().isoformat()

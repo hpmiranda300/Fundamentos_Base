@@ -4,10 +4,12 @@ import pandas as pd
 import random
 
 
+from pathlib import Path
+
 app = FastAPI(debug=True)
 fake = Faker()
 
-file_name = 'data/products.csv'
+file_name = Path(__file__).parent / 'data' / 'products.csv'
 df = pd.read_csv(file_name)
 df['indice'] = range(1, len(df) +1)
 df.set_index('indice', inplace=True)
@@ -73,3 +75,8 @@ async def gerar_compra(numero_registro: int):
         except Exception as e:
             print(f"Erro inesperado: {e}")
     return respostas
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)

@@ -1,8 +1,15 @@
-from pydantic import BaseModel
+#from pydantic import BaseModel
+#class PokemonSchema(BaseModel):
+#    name: str
+#    type: str
+#
+#    class Config:
+#        orm_mode = True
+
+from pydantic import BaseModel, ConfigDict
 
 class PokemonSchema(BaseModel):
-    name: str
-    type: str
+    model_config = ConfigDict(from_attributes=True)  # <-- Configuração V2
 
-    class Config:
-        orm_mode = True
+    name: str
+    type: str  

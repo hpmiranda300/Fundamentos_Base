@@ -1,3 +1,4 @@
+from pathlib import Path
 from sqlmodel import SQLModel, Field, create_engine, Session, select
 from typing import Optional
 
@@ -8,8 +9,15 @@ class Livro(SQLModel, table=True):
     ano_publicacao: int
     disponivel: bool = True
 
+# Aponta para a pasta onde o próprio main.py está localizado (aula16/)
+# 1. Define os caminhos da pasta aula16
+pasta = Path(__file__).parent
+db_path = pasta / "biblioteca.db"
+
 # Conexão com o banco de dados (SQLite para simplicidade)
-engine = create_engine("sqlite:///biblioteca.db")
+# Usamos .as_posix() para padronizar as barras no formato aceito pelo SQLite (/)
+engine = create_engine(f"sqlite:///{db_path.as_posix()}", echo=True)
+#engine = create_engine("sqlite:///biblioteca.db")
 
 # Criação da tabela
 SQLModel.metadata.create_all(engine)

@@ -1,0 +1,23 @@
+# Ambientes virtuais
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+logs/
+
+# Arquivos sensíveis
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
